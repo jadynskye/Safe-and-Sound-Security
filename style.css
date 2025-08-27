@@ -84,3 +84,24 @@
       a:hover{
         color: purple;
       }
+
+      /* unvisited link */
+       a:link {
+         color: blue;
+      }
+      
+      /* visited link */
+        a:visited {
+          color: blue; 
+      }
+      
+       /* hovered over link */
+         a:hover {
+           color: darkred;
+      }
+      
+          /* when link is clicked */
+         a:active {
+           color: orange;
+      }
+            
