@@ -6,7 +6,7 @@ I’ve put many hours into this project, and seeing it come to life has been an 
 Safe & Sound Security is a full-stack inspired project that simulates a smart home security dashboard.
 Right now it includes a login page that leads to a responsive dashboard UI.
 
-Features
+📊 Features
 
 	• Login page (navigates to dashboard)
 	• Dashboard layout with space for status cards, controls, and notifications
