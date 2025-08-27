@@ -1,4 +1,4 @@
-# 🏡 Safe&Sound Security
+# ☁️ Safe&Sound Security
 
 This is my first project working on frontend engineering with HTML and CSS, and I’m super stoked to say I love it!
 I’ve put many hours into this project, and seeing it come to life has been an awesome journey.
