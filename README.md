@@ -27,7 +27,7 @@ Right now it includes a login page that leads to a responsive dashboard UI.
 
 Some back end portions of the project are still in the works but happy to share what this project looks like so far!
 
- ![Screenshot](Dashboard.png)
+ ![Screenshot](dashboard.png)
 
 
 📂 Project Structure
