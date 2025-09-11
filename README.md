@@ -15,7 +15,7 @@ Right now it includes a login page that leads to a responsive dashboard UI.
  
 🔑 Login Page
 
- ![Screenshot](login-photo)
+ ![Screenshot](login-photo.png)
 
 📂 Project Structure
 
