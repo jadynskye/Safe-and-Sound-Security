@@ -15,7 +15,7 @@ Right now it includes a login page that leads to a responsive dashboard UI.
  
 🔑 Login Page
 
- ![Screenshot](S&S Login.png)
+ ![Screenshot](S&SLogin.png)
 
 📂 Project Structure
 
