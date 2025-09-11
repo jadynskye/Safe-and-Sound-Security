@@ -12,10 +12,23 @@ Right now it includes a login page that leads to a responsive dashboard UI.
 	• Dashboard layout with space for status cards, controls, and notifications
 	• Responsive design (works on desktop & mobile)
 	• Clean and modern UI
+    • Device controls (lock/unlock doors, arm/disarm system, turn lights on/off)
+	• Simulated camera feed (placeholder images that update in real time)
+	• Notification panel with live updates (new events appear at runtime)
+	• JavaScript interactions (real-time toggles, mock “WebSocket-style” events)
+	• Reusable styles (grid layouts, card components, buttons, and status dots)
+	• Scalable project structure (HTML pages, shared CSS, JS logic, and assets folder)
  
 🔑 Login Page
 
  ![Screenshot](login-photo.png)
+
+🏠 Home Page
+
+Some back end portions of the project are still in the works but happy to share what this project looks like so far!
+
+ ![Screenshot](Dashboard.png)
+
 
 📂 Project Structure
 
