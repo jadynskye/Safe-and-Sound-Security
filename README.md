@@ -35,7 +35,7 @@ Some back end portions of the project are still in the works but happy to share 
     SafeAndSound/
     │── index.html        # Dashboard page
     │── login.html        # Login page
-    │── styles.css        # Main styling
+    │── login.css        # Login CSS
     │── images/           # Logos, background images, etc.
     │── README.md         # Project description
 
