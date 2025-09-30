@@ -1,45 +1,70 @@
 # ☁️ Safe&Sound Security
 
-This is my first project working on frontend engineering with HTML and CSS, and I’m super stoked to say I love it!
-I’ve put many hours into this project, and seeing it come to life has been an awesome journey.
+This is my first full-stack inspired project, and I’m stoked to say I loved building it!  
+I started with HTML and CSS for the frontend, then connected it to a backend with FastAPI and SQLite.  
+Seeing it all come to life as a working login + dashboard has been such a cool journey. I will definitely come back and try to grow this project more by adding scheduling for devices, user authentication with real tokens, push notifications, and even real camera feeds as I learn more.
 
-Safe & Sound Security is a full-stack inspired project that simulates a smart home security dashboard.
-Right now it includes a login page that leads to a responsive dashboard UI.
+Safe & Sound Security is a smart home dashboard demo where you can log in and control devices.  
+It has a clean UI, device toggles, and even live updates over WebSockets.
 
-📊 Features
+---
 
-	• Login page (navigates to dashboard)
-	• Dashboard layout with space for status cards, controls, and notifications
-	• Responsive design (works on desktop & mobile)
-	• Clean and modern UI
-    • Device controls (lock/unlock doors, arm/disarm system, turn lights on/off)
-	• Simulated camera feed (placeholder images that update in real time)
-	• Notification panel with live updates (new events appear at runtime)
-	• JavaScript interactions (real-time toggles, mock “WebSocket-style” events)
-	• Reusable styles (grid layouts, card components, buttons, and status dots)
-	• Scalable project structure (HTML pages, shared CSS, JS logic, and assets folder)
- 
-🔑 Login Page
+## 📊 Features
 
- ![Screenshot](S&S.png)
+- **Login page** → connects to the FastAPI backend and takes you to the dashboard  
+- **Dashboard layout** → sections for devices, metrics, and camera feeds  
+- **Responsive design** → works on both desktop and mobile  
+- **Device controls** → toggle devices (lights, sensors, thermostat, etc)  
+- **Simulated camera feed** → placeholder images that switch by room  
+- **Real-time updates** → WebSocket keeps device states in sync  
+- **Reusable styles** → grid layouts, cards, buttons, and status blocks  
+- **Backend API** → FastAPI endpoints for login and devices, plus SQLite database with demo data  
 
-🏠 Home Page
+---
 
-Some back end portions of the project are still in the works but happy to share what this project looks like so far!
+## 🔑 Login Page
 
- ![Screenshot](dashboard.png)
+![Screenshot](S&S.png)
 
+---
 
-📂 Project Structure
+## 🏠 Dashboard Page
 
-    SafeAndSound/
-    │── index.html        # Dashboard page
-    │── s&s-login.html        # Login page
-    │── s&s-login.css        # Login CSS
-    │── images/           # Logos, background images, etc.
-    │── README.md         # Project description
+Backend + frontend come together here. Devices are pulled from the API, toggles change their state,  
+and WebSockets update everything live.
 
-🛠️ Tech Stack
+![Screenshot](dashboard.png)
 
-	•	HTML5 – page structure
-	•	CSS3 – styling and responsiveness
+Showcasing device toggles:  
+![Toggles](toggles.png)
+
+Showcasing multi-camera view:  
+![MultiCamera](multicamera.png)
+
+---
+
+## 📂 Project Structure
+
+SafeAndSound/  
+│── backend/  
+│   ├── app.py        # FastAPI app (routes, WebSocket, seeding demo data)  
+│   ├── db.py         # SQLite setup (engine + session)  
+│   ├── models.py     # User, Device, Schedule tables  
+│── scripts/  
+│   ├── login.js      # Handles login form and API call  
+│   ├── dashboard.js  # Handles toggles, tabs, WebSocket live updates  
+│── s&s-login.html    # Login page  
+│── s&s-login.css     # Login CSS  
+│── dashboard.html    # Dashboard page  
+│── dashboard.css     # Dashboard CSS  
+│── images/           # Logos, screenshots, placeholders  (not included in repo but some images are shown)
+│── README.md         # Project description  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend** → HTML5, CSS3, JavaScript  
+- **Backend** → Python, FastAPI  
+- **Database** → SQLite
+- **Realtime** → WebSocket (FastAPI + JS client)  
