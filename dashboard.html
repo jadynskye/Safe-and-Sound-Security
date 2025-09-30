@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- So special characters (like &) display correctly -->
+    <meta charset="utf-8" />
+    <!-- Ensures website looks good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Safe &amp; Sound • Dashboard
+    </title>
+    <!-- Allows program to use Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles/dashboard.css" />
+
+    <!-- Linking JavaScript -->
+    <script src="scripts/dashboard.js" defer></script>  
+
+  </head>
+  <body>
+    <div class="app">
+      <div class="frame grid">
+        <!-- Sidebar -->
+        <aside class="panel sidebar">
+          <div class="logo">
+            <i class="fas fa-shield-halved"></i>
+            &nbsp; Safe&nbsp;&amp;&nbsp;Sound
+          </div>
+          <nav class="nav">
+            <a href="#" class="active" data-room="living">
+              <span class="icon">
+                <i class="fas fa-couch"></i>
+              </span>
+              <span>
+                Living
+              </span>
+            </a>
+            <a href="#" data-room="bedroom">
+              <span class="icon">
+                <i class="fas fa-bed"></i>
+              </span>
+              <span>
+                Bedroom
+              </span>
+            </a>
+            <a href="#" data-room="dining">
+              <span class="icon">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <span>
+                Dining
+              </span>
+            </a>
+            <a href="#" data-room="kitchen">
+              <span class="icon">
+                <i class="fas fa-blender"></i>
+              </span>
+              <span>
+                Kitchen
+              </span>
+            </a>
+            <a href="#" data-room="entrance">
+              <span class="icon">
+                <i class="fas fa-door-open"></i>
+              </span>
+              <span>
+                Entrance
+              </span>
+            </a>
+            <hr class="sep" />
+            <a href="s&amp;s-login.html">
+              <span class="icon">
+                <i class="fas fa-user-lock"></i>
+              </span>
+              <span class="muted">
+                Back to Login
+              </span>
+            </a>
+          </nav>
+        </aside>
+
+        <!-- HEADER -->
+        <header class="panel header">
+          <input
+            class="search"
+            placeholder="Search devices, rooms, logs…"
+          />
+          <div class="pill" id="clock">
+            --:--
+          </div>
+          <div class="pill">
+            Jadyn Reid ▾
+          </div>
+        </header>
+
+        <!-- TABS -->
+        <nav class="panel tabs">
+          <div class="tab active" data-room="living">
+            Living
+          </div>
+          <div class="tab" data-room="bedroom">
+            Bedroom
+          </div>
+          <div class="tab" data-room="dining">
+            Dining
+          </div>
+          <div class="tab" data-room="kitchen">
+            Kitchen
+          </div>
+          <div class="tab" data-room="entrance">
+            Entrance
+          </div>
+        </nav>
+
+        <!-- MAIN -->
+        <main class="panel main">
+          <!-- Camera -->
+          <section class="camera">
+            <img
+              src="images/living.jpg"
+              id="cam-living"
+              class="active"
+              alt="Living camera"
+            />
+            <img
+              src="images/bedroom.jpg"
+              id="cam-bedroom"
+              alt="Bedroom camera"
+            />
+            <img
+              src="images/dining.jpg"
+              id="cam-dining"
+              alt="Dining camera"
+            />
+            <img
+              src="images/kitchen.jpg"
+              id="cam-kitchen"
+              alt="Kitchen camera"
+            />
+            <img
+              src="images/entrance.jpg"
+              id="cam-entrance"
+              alt="Entrance camera"
+            />
+          </section>
+
+          <!-- KPIs -->
+          <section class="metrics">
+            <div class="card soft">
+              <p class="h">
+                Total energy saving
+              </p>
+              <p class="kpi">
+                45.6 kWh
+              </p>
+            </div>
+            <div class="card soft">
+              <p class="h">
+                Online devices
+              </p>
+              <p class="kpi">
+                <span id="online-count">
+                  5
+                </span>
+                /
+                6
+              </p>
+            </div>
+          </section>
+
+          <!-- Devices -->
+          <section class="devices">
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Living Light
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="living-light"
+                  checked
+                />
+              </div>
+              <span class="muted">
+                Smart Bulb • Living
+              </span>
+            </div>
+
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Thermostat
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="thermostat"
+                />
+              </div>
+              <span class="muted">
+                HVAC • Living
+              </span>
+            </div>
+
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Door Sensor
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="door-sensor"
+                  checked
+                />
+              </div>
+              <span class="muted">
+                Entrance
+              </span>
+            </div>
+
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Camera
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="camera"
+                  checked
+                />
+              </div>
+              <span class="muted">
+                Entrance
+              </span>
+            </div>
+
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Smoke Alarm
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="smoke"
+                  checked
+                />
+              </div>
+              <span class="muted">
+                Kitchen
+              </span>
+            </div>
+
+            <div class="device">
+              <div class="row">
+                <strong>
+                  Motion Sensor
+                </strong>
+                <input
+                  type="checkbox"
+                  class="toggle"
+                  data-device="motion"
+                  checked
+                />
+              </div>
+              <span class="muted">
+                Hallway
+              </span>
+            </div>
+          </section>
+        </main>
+
+        <!-- RIGHT RAIL -->
+        <aside class="panel right">
+          <div class="group">
+            <div class="card">
+              <p class="h">
+                Mode
+              </p>
+              <div
+                class="row"
+                style="display:grid;grid-auto-flow:column;align-items:center;gap:10px;justify-content:start"
+              >
+                <button class="btn" data-mode="home">
+                  <i class="fa-solid fa-house"></i>
+                  &nbsp; Home
+                </button>
+                <button
+                  class="btn"
+                  data-mode="away"
+                  style="background:linear-gradient(180deg,#06b6d4,#0891b2)"
+                >
+                  <i class="fa-solid fa-plane-departure"></i>
+                  &nbsp; Away
+                </button>
+              </div>
+            </div>
+
+            <div class="card soft">
+              <p class="h">
+                Tips
+              </p>
+              <div class="muted">
+                Set schedules to reduce peak energy usage. Use “Away” to auto-arm sensors.
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- So special characters (like &) display correctly -->
+    <meta charset="utf-8" />
+    <!--Ensures website looks good on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Safe &amp; Sound • Login
+    </title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles/s&s-login.css">
+
+    <!-- Linking JS -->
+    <script src="scripts/login.js" defer></script>
+
+  </head>
+  <body>
+    <main class="page-container">
+      <!-- Left-->
+      <section class="left-container">
+        <!-- Site logo -->
+        <a class="logo" href="#">
+          <svg viewBox="0 0 256 256">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#4ea3ff"/>
+                <stop offset="100%" stop-color="#1677ff"/>
+              </linearGradient>
+            </defs>
+            <!-- Shield -->
+            <path d="M128 20 L216 56 V120 c0 60-38 104-88 116 C78 224 40 180 40 120 V56 Z" fill="url(#g1)"/>
+            <!-- Lock shackle -->
+            <path d="M98 118 v-16a30 30 0 0 1 60 0 v16" fill="none" stroke="#e9eef8" stroke-width="12" stroke-linecap="round"/>
+            <!-- Lock body -->
+            <rect x="86" y="118" width="84" height="62" rx="10" fill="#0e1a2b" stroke="#cfe2ff" stroke-width="2"/>
+            <!-- Keyhole -->
+            <circle cx="128" cy="150" r="10" fill="#cfe2ff"/>
+          </svg>
+          <!--Title next to logo-->
+          <h1>
+            Safe &amp; Sound
+          </h1>
+        </a>
+
+        <!--Tagline for S&S security-->
+        <p class="tagline">
+          “Safe. Sound. Always.” — Secure access to your home dashboard.
+        </p>
+
+        <!-- Live Status section -->
+        <div class="status-list">
+          <div class="status-box">
+            <div class="status">
+              Armed • Home
+            </div>
+            <div class="name">
+              Mode
+            </div>
+          </div>
+
+          <div class="status-box">
+            <div class="status">
+              All Clear
+            </div>
+            <div class="name">
+              Sensors
+            </div>
+          </div>
+
+          <div class="status-box">
+            <div class="status">
+              Online
+            </div>
+            <div class="name">
+              Hub
+            </div>
+          </div>
+        </div>
+
+        <!--Saw on another website - wanted to incorperate-->
+        <p class="legal">
+          By continuing you agree to our 
+          <a class="link" href="#">
+            Terms
+          </a> 
+          and 
+          <a class="link" href="#">
+            Privacy
+          </a>.
+        </p>
+      </section>
+
+      <!-- Right / Login card -->
+      <section>
+        <div class="card">
+          <div class="card-head">
+            <h2 class="card-title">
+              Welcome back
+            </h2>
+            <p class="card-sub">
+              Log in to manage your cameras, sensors, and alerts.
+            </p>
+          </div>
+
+          <form>
+            <div class="field">
+              <label for="email">
+                Email
+              </label>
+              <div class="input">
+                <!-- mail icon and input -->
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"/>
+                </svg>
+                <input id="email" name="email" type="email" placeholder="you@example.com">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="password">
+                Password
+              </label>
+              <div class="input">
+                <!-- lock icon -->
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M17 8h-1V6a4 4 0 1 0-8 0v2H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2Zm-6 0V6a2 2 0 1 1 4 0v2h-4Z"/>
+                </svg>
+                <input id="password" name="password" type="password" placeholder="••••••••">
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Clickable "Remember me" label-->
+              <label class="check">
+                <input type="checkbox" name="remember"> 
+                Remember me
+              </label>
+              <!--If password forgot - doesn't work at the moment-->
+              <a class="link" href="#">
+                Forgot password?
+              </a>
+            </div>
+
+            <button type="submit" class="login-button">
+               Login
+            </button>
+          </form>
+
+          <div class="alt">
+            No account? 
+            <a class="link" href="#">
+              Create one
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Bottom section-->
+    <footer class="bottom-section">
+      <!-- Credibility -->
+      <p>
+        Created by: Jadyn Reid
+      </p>
+
+      <!-- Github Link -->
+      <p>
+        <a href="https://github.com/jadynskye?tab=repositories" target="_blank">
+          Github: jadynskye
+        </a>
+      </p>
+
+      <!-- Email Link -->
+      <p>
+        <a href="mailto:jadynreidsfe@gmail.com" target="_blank">
+          Email: jadynreidsfe@gmail.com
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
