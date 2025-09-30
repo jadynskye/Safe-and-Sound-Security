@@ -10,8 +10,6 @@ Allows to use colors with new name */
   --muted: #b7c4da;
   --card: rgba(14,26,43,0.6);
   --outline: #9cc3ff;
-  --ok: #22c55e;
-  --warn: #f59e0b;
   --shadow: 0 20px 60px rgba(0,0,0,.35);
   --radius: 18px;
 }
